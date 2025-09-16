@@ -1,0 +1,14 @@
+<project default="compile">
+
+    <target name="clean">
+        <delete dir="build"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="build/bin"/>
+        <copy todir="build/bin">
+          <fileset dir="src"/>
+        </copy>
+    </target>
+
+</project>
