@@ -1,10 +1,12 @@
 <project default="compile">
 
     <target name="clean">
+        <echo>clean called</echo>
         <delete dir="build"/>
     </target>
 
     <target name="compile" depends="clean">
+        <echo>compile called</echo>
         <mkdir dir="build/bin"/>
         <copy todir="build/bin">
           <fileset dir="src"/>
