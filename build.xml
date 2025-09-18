@@ -4,7 +4,7 @@
         <delete dir="build"/>
     </target>
 
-    <target name="compile">
+    <target name="compile" depends="clean">
         <mkdir dir="build/bin"/>
         <copy todir="build/bin">
           <fileset dir="src"/>
